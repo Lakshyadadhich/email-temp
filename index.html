@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Feedback Form</title>
+  <title>Booking Feedback Form</title>
   <style>
     * {
       box-sizing: border-box;
@@ -31,7 +31,6 @@
       width: 90%;
       color: #fff;
       box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-      position: relative;
     }
 
     h2 {
@@ -40,7 +39,7 @@
       color: #fff;
     }
 
-    label, p {
+    label {
       display: block;
       margin-bottom: 6px;
       font-weight: 500;
@@ -99,32 +98,32 @@
 </head>
 <body>
 
-<form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00DgK000004KER8" method="POST" onsubmit="showMessage()">
-  <input type="hidden" name="orgid" value="00DgK000004KER8" />
-  <input type="hidden" name="retURL" value="http://crowenCrest.com" />
+  <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00DgK000004KER8" method="POST" onsubmit="showMessage()">
+    <input type="hidden" name="orgid" value="00DgK000004KER8" />
+    <input type="hidden" name="retURL" value="http://crowenCrest.com" />
 
-  <h2>Booking Feedback</h2>
+    <h2>Booking Feedback</h2>
 
-  <!-- Thank You Message Placeholder -->
-  <div id="thankYouMessage">✅ Your feedback is being submitted. Thank you!</div>
+    <!-- Thank You Message Placeholder -->
+    <div id="thankYouMessage">✅ Your feedback is being submitted. Thank you!</div>
 
-  <label for="email">Email</label>
-  <input id="email" maxlength="80" name="email" type="text" required />
+    <label for="email">Email</label>
+    <input id="email" name="email" maxlength="80" type="text" required />
 
-  <label for="00NgK000012dRt7">Booking ID</label>
-  <input id="00NgK000012dRt7" maxlength="20" name="00NgK000012dRt7" type="text" required />
+    <label for="00NgK000012dRt7">Booking ID</label>
+    <input id="00NgK000012dRt7" name="00NgK000012dRt7" maxlength="20" type="text" required />
 
-  <label for="00NgK000012dRuj">Feedback</label>
-  <textarea id="00NgK000012dRuj" name="00NgK000012dRuj" rows="3" wrap="soft" required></textarea>
+    <label for="00NgK000012dRuj">Feedback</label>
+    <textarea id="00NgK000012dRuj" name="00NgK000012dRuj" rows="3" wrap="soft" required></textarea>
 
-  <input type="submit" name="submit" value="Submit Feedback" />
-</form>
+    <input type="submit" name="submit" value="Submit Feedback" />
+  </form>
 
-<script>
-  function showMessage() {
-    document.getElementById('thankYouMessage').style.display = 'block';
-  }
-</script>
+  <script>
+    function showMessage() {
+      document.getElementById('thankYouMessage').style.display = 'block';
+    }
+  </script>
 
 </body>
 </html>
